@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+
+Apply throughout all phases and all code generation:
+
+- Every non-trivial decision is logged in the Key Decisions section 
+  of PROJECT.md with a one-line reason. A teammate must be able to 
+  understand why without asking.
+- Every assumption made during implementation is flagged explicitly 
+  in PROJECT.md under Open Questions until confirmed.
+- Code that is not self-explanatory gets a one-line comment 
+  explaining why, not what.
+- Anything deferred or incomplete is marked with a TODO that includes 
+  enough context for a teammate to act on it without asking.
+- Before starting any task, check if it affects an interface, 
+  contract, or module that another part of the system depends on. 
+  If yes, flag the impact before proceeding.
+- When a change is integrated via @adapt.md, the reason for the 
+  change is logged under Key Decisions so the evolution of the 
+  project is always traceable.

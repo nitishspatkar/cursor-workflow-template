@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+
+Apply to all UI implementation work:
+
+- Never begin implementing a UI task without first checking if a 
+  design spec exists in design-specs/ for that feature or screen.
+- If a design spec exists, read it fully before writing any code.
+- Spacing, typography, color, and layout values from the design spec 
+  are treated as requirements, not suggestions.
+- Never deviate from a design spec without flagging it to the user 
+  first with a specific reason.
+- If something in the design is technically ambiguous or infeasible, 
+  raise it as an open question before implementing a workaround.
+- If a design token or component already exists in the project that 
+  matches the design, use it. Never create a duplicate.
+- After completing any UI task, ask: "Please compare this against 
+  the design spec before approving."
+- If a design spec is updated via @adapt.md, any already-completed 
+  UI tasks affected by that change are marked [REVISIT] automatically.

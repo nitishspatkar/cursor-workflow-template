@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+priority: high
+---
+
+# Project Conventions — learned from existing codebase
+
+[Empty — populated by running @learn-codebase.md]
+
+When populated, these conventions take priority over code-standards.mdc 
+in all cases of conflict. The project's existing style always wins over 
+general principles.

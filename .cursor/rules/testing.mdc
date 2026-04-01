@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+
+Apply to all implementation work without exception:
+
+- Tests are written alongside code, never after.
+- Every function gets at minimum: one happy path test, one edge case 
+  test, one failure case test.
+- Test names describe behavior, not implementation. 
+  "returns empty list when no results found" not "test_query_fn".
+- No task is marked done until its tests pass.
+- For any function with complex logic, write the tests before the 
+  implementation.
+- Never mock what you can test directly.
+- If a bug is fixed, a regression test is added before closing 
+  the task.
+- If a task is marked [REVISIT] due to a change, existing tests 
+  for that task must be reviewed and updated before it is 
+  re-approved.
+- Never merge a branch that has failing tests.

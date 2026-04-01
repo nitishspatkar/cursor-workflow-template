@@ -1,0 +1,24 @@
+---
+alwaysApply: true
+---
+
+Apply to all implementation work without exception:
+
+- Every task in the Plan corresponds to exactly one branch.
+- Branch naming follows this pattern:
+  task/[task-number]-[short-description]
+  Examples: task/04-user-auth, task/07-dashboard-ui
+- No code is ever written directly on main or dev.
+- Always pull the latest dev before creating a new task branch.
+- A task is not considered complete until its branch has been 
+  reviewed, all tests pass, and it has been merged back to dev.
+- PROJECT.md tracks branch name and merge status alongside 
+  each task.
+- Never merge a branch that has failing tests.
+- Never merge a branch that has unresolved [REVISIT] markers.
+- If a task branch reveals a conflict with another branch, 
+  flag it immediately as a blocker before continuing.
+- Commit messages must be specific and describe what was built.
+  Never use "updates", "fixes", or "changes" alone as a message.
+- Use --no-ff on all merges to preserve task history in the 
+  branch graph.

@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+---
+
+Apply to all code generation without exception:
+
+- Simple and readable over clever. If it needs a comment to explain 
+  what it does, rewrite it.
+- No premature abstraction. Only abstract when the same pattern 
+  appears three or more times in the codebase.
+- Every function does exactly one thing. If you cannot name it 
+  without using "and", split it.
+- Errors are always handled explicitly. Never swallow, ignore, or 
+  log-and-continue an error silently.
+- No magic numbers or unexplained constants. Name everything that 
+  has meaning.
+- Naming must be consistent throughout. Agree on a convention at 
+  project start and never deviate.
+- Never introduce a new dependency without flagging it to the user 
+  first with a one-line reason why it is necessary.
+- Never generate code beyond the scope of the current task.
+- If something feels complex, stop and ask whether there is a 
+  simpler approach before proceeding.

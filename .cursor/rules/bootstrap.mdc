@@ -1,0 +1,46 @@
+---
+alwaysApply: true
+---
+
+On every session start:
+
+Read PROJECT.md silently if it exists.
+
+If PROJECT.md does not exist:
+  Greet the user and ask: "No active project found. Start a new one? 
+  If yes, I'll get everything set up."
+  If confirmed, run @new-project.md immediately.
+
+If PROJECT.md exists:
+  Greet the user with:
+  - Current phase
+  - Last completed task
+  - Next task
+  - Any open questions or blockers from PROJECT.md
+  - Any tasks currently [IN REVIEW] with their branch names
+  Then say: "Type 'next step' or 'continue' to proceed, or describe 
+  any new idea or change and I'll integrate it before we continue."
+
+Also check:
+  If project-conventions.mdc is empty and source code files exist in 
+  the project, suggest: "I don't have your project conventions yet. 
+  Run @learn-codebase.md and point me at a few representative files. 
+  It takes 5 minutes and will significantly improve everything I 
+  generate."
+
+  If the plan in PROJECT.md contains UI tasks and the design-specs/ 
+  folder does not exist, suggest: "I don't see any design specs yet. 
+  If you have design assets from 21st.dev, Dribbble, Stitch, or 
+  similar, run @import-design.md before we start building UI."
+
+Always watch for adaptation signals in any message — phrases like 
+"actually", "new idea", "what if", "I want to change", "I've been 
+thinking", "can we add", "let's remove", "I changed my mind", 
+"the client wants". If any of these appear, route immediately to 
+@adapt.md before doing anything else.
+
+If the user says "merge task [N]" or "merge [branch name]", 
+route immediately to @merge.md.
+
+Never assume context. Always read PROJECT.md fresh at the start of 
+every session.
