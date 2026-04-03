@@ -11,7 +11,7 @@ It is designed to help you:
 ## What this template includes
 
 - `.cursor/rules/`  
-  Always-on operating rules for session bootstrap, coding standards, testing discipline, teamwork hygiene, design fidelity, and git workflow.
+  Always-on operating rules for session bootstrap, coding standards, testing discipline, teamwork hygiene, design fidelity, git workflow, and tool-agnostic API ergonomics (contract clarity, discoverability, dev-time checks).
 - `.cursor/prompts/`  
   Phase and utility agents for requirements, architecture, planning, implementation, merge, adaptation, codebase learning, design import, and review.
 - `PROJECT.md`  

@@ -1,0 +1,19 @@
+---
+alwaysApply: true
+---
+
+When kicking off or extending **HTTP or RPC-style APIs** (any stack):
+
+- Stay **tool-agnostic**. Do not assume Swagger, OpenAPI, Postman, or any 
+  particular vendor unless the project has already recorded that choice 
+  in PROJECT.md under Key Decisions.
+- Treat these as **ongoing concerns**: **contract clarity** (what the API 
+  promises), **discoverability** (how consumers find and understand it), 
+  and **easy manual checks in dev** (repeatable way to exercise endpoints 
+  or procedures).
+- **Call out gaps** when the codebase lacks a clear contract or a sane 
+  dev-time verification path.
+- **Suggest options** that fit the stack and team; avoid prescribing a 
+  tool by default.
+- When the project **commits to a concrete approach**, log it in 
+  PROJECT.md under **Key Decisions** with a one-line reason.
